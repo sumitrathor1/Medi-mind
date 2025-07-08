@@ -25,3 +25,6 @@
     <!-- <link href="vendors/aos/aos.css" rel="stylesheet"> -->
     <link href="vendors/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
