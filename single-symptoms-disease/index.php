@@ -23,7 +23,6 @@ if (isset($_GET['id'])) {
     include "../assets/pages/_page-head.php"; 
     header_path('../'); 
     ?>
-    <link rel="stylesheet" href="../assets/css/main.css">
 
     <title>Single Symptoms Disease | Medi-Mind</title>
     <style>

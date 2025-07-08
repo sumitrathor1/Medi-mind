@@ -1,11 +1,13 @@
 
+/* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito",  sans-serif;
-  --nav-font: "Inter",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Nunito", sans-serif;
+  --nav-font: "Inter", sans-serif;
 }
 
-:root { 
+
+:root {
   --background-color: #ffffff;
   --default-color: #212529;
   --heading-color: #2d465e;
@@ -15,13 +17,14 @@
 }
 
 :root {
-  --nav-color: #212529;  
-  --nav-hover-color: #0d83fd; 
-  --nav-mobile-background-color: #ffffff; 
-  --nav-dropdown-background-color: #ffffff; 
-  --nav-dropdown-color: #212529; 
-  --nav-dropdown-hover-color: #0d83fd; 
+  --nav-color: #212529;
+  --nav-hover-color: #0d83fd;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #212529;
+  --nav-dropdown-hover-color: #0d83fd;
 }
+
 
 .light-background {
   --background-color: #f3f9ff;
@@ -36,11 +39,14 @@
   --contrast-color: #ffffff;
 }
 
-
+/* Smooth scroll */
 :root {
   scroll-behavior: smooth;
 }
 
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -68,6 +74,8 @@ h6 {
   font-family: var(--heading-font);
 }
 
+/* PHP Email Form Messages
+------------------------------*/
 .php-email-form .error-message {
   display: none;
   background: #df1529;
@@ -118,6 +126,9 @@ h6 {
   }
 }
 
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
 .header {
   --background-color: rgba(255, 255, 255, 0);
   color: var(--default-color);
@@ -198,7 +209,10 @@ h6 {
   }
 }
 
-
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Navmenu - Desktop */
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
@@ -305,7 +319,7 @@ h6 {
   }
 }
 
-
+/* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
@@ -432,6 +446,9 @@ h6 {
   }
 }
 
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -546,6 +563,9 @@ h6 {
   font-size: 13px;
 }
 
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
   visibility: hidden;
@@ -577,12 +597,18 @@ h6 {
   bottom: 15px;
 }
 
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
+/*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
 .page-title {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -619,6 +645,9 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
 section,
 .section {
   color: var(--default-color);
@@ -636,6 +665,9 @@ section,
   }
 }
 
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
 .section-title {
   text-align: center;
   padding-bottom: 60px;
@@ -667,8 +699,12 @@ section,
   margin-bottom: 0;
 }
 
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
 .hero {
   position: relative;
+  padding-top: 160px;
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 50%, color-mix(in srgb, var(--accent-color), transparent 98%) 25%, transparent 50%);
 }
 
@@ -908,6 +944,9 @@ section,
   }
 }
 
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
 .about .about-meta {
   color: var(--accent-color);
   font-weight: 600;
@@ -1095,6 +1134,9 @@ section,
   }
 }
 
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
 .features .nav-tabs {
   border: 0;
   background-color: color-mix(in srgb, var(--default-color), transparent 96%);
@@ -1207,18 +1249,21 @@ section,
   margin-bottom: 0;
 }
 
-.features-cards {
+/*--------------------------------------------------------------
+# Features Cards Section
+--------------------------------------------------------------*/
+.disease-cards {
   --default-color: #555;
   --heading-color: #333;
 }
 
-.features-cards .feature-box {
+.disease-cards .disease-box {
   height: 100%;
   padding: 40px 30px;
   border-radius: 10px;
 }
 
-.features-cards .feature-box i {
+.disease-cards .disease-box i {
   font-size: 44px;
   display: inline-block;
   line-height: 0;
@@ -1226,49 +1271,52 @@ section,
   margin-bottom: 20px;
 }
 
-.features-cards .feature-box h4 {
+.disease-cards .disease-box h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
 }
 
-.features-cards .feature-box p {
+.disease-cards .disease-box p {
   font-size: 15px;
   margin-bottom: 0;
 }
 
-.features-cards .feature-box.orange {
+.disease-cards .disease-box.orange {
   background-color: #fff3e2;
 }
 
-.features-cards .feature-box.orange i {
+.disease-cards .disease-box.orange i {
   color: #edb86e;
 }
 
-.features-cards .feature-box.blue {
+.disease-cards .disease-box.blue {
   background-color: #deedfd;
 }
 
-.features-cards .feature-box.blue i {
+.disease-cards .disease-box.blue i {
   color: #20a5f8;
 }
 
-.features-cards .feature-box.green {
+.disease-cards .disease-box.green {
   background-color: #d5f1e4;
 }
 
-.features-cards .feature-box.green i {
+.disease-cards .disease-box.green i {
   color: #48c88a;
 }
 
-.features-cards .feature-box.red {
+.disease-cards .disease-box.red {
   background-color: #fdeded;
 }
 
-.features-cards .feature-box.red i {
+.disease-cards .disease-box.red i {
   color: #f28484;
 }
 
+/*--------------------------------------------------------------
+# Features 2 Section
+--------------------------------------------------------------*/
 .features-2 .feature-item .feature-icon {
   width: 60px;
   height: 60px;
@@ -1324,6 +1372,9 @@ section,
   }
 }
 
+/*--------------------------------------------------------------
+# Call To Action Section
+--------------------------------------------------------------*/
 .call-to-action .container {
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -1485,6 +1536,9 @@ section,
   }
 }
 
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
 .clients .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
@@ -1516,6 +1570,9 @@ section,
   background-color: var(--accent-color);
 }
 
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
 .testimonials .testimonial-item {
   background-color: var(--surface-color);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
@@ -1580,6 +1637,9 @@ section,
   padding: 0;
 }
 
+/*--------------------------------------------------------------
+# Stats Section
+--------------------------------------------------------------*/
 .stats .stats-item {
   padding: 30px;
   width: 100%;
@@ -1616,6 +1676,9 @@ section,
   font-weight: 500;
 }
 
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
 .services .service-card {
   height: 100%;
   padding: 30px;
@@ -1683,6 +1746,9 @@ section,
   transform: translateX(5px);
 }
 
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
 .pricing .pricing-card {
   height: 100%;
   padding: 2rem;
@@ -1819,6 +1885,9 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
+/*--------------------------------------------------------------
+# Faq Section
+--------------------------------------------------------------*/
 .faq .faq-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -1912,6 +1981,9 @@ section,
   color: var(--accent-color);
 }
 
+/*--------------------------------------------------------------
+# Call To Action 2 Section
+--------------------------------------------------------------*/
 .call-to-action-2 {
   padding: 80px 0;
 }
@@ -1949,6 +2021,9 @@ section,
   border-color: var(--contrast-color);
 }
 
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
 .contact .info-box {
   background-color: var(--accent-color);
   color: var(--contrast-color);
@@ -2100,6 +2175,9 @@ section,
   background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
 }
 
+/*--------------------------------------------------------------
+# Service Details Section
+--------------------------------------------------------------*/
 .service-details .service-box {
   background-color: var(--surface-color);
   padding: 20px;

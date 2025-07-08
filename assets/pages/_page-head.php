@@ -8,8 +8,10 @@ function header_path($basepath) {
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Favicons -->
-    <link href="' . $basepath . 'assets/img/favicon/favicon.ico" rel="icon">
-    <link href="' . $basepath . 'assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="' . $basepath . 'assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="' . $basepath . 'assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="' . $basepath . 'assets/img/favicon-16x16.png">
+    <link rel="icon" href="' . $basepath . 'assets/img/favicon/favicon.ico">
     <link rel="manifest" href="' . $basepath . 'assets/img/favicon/site.webmanifest">
 
     <!-- Fonts -->
@@ -22,8 +24,10 @@ function header_path($basepath) {
     <!-- Vendor CSS Files -->
     <link href="' . $basepath . 'vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="' . $basepath . 'vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="' . $basepath . 'vendors/aos/aos.css" rel="stylesheet">
     <link href="' . $basepath . 'vendors/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="' . $basepath . 'vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
     <!-- Main CSS File -->
     <link href="' . $basepath . 'assets/css/main.css" rel="stylesheet">
