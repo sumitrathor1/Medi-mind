@@ -23,12 +23,9 @@ if (isset($_GET['id'])) {
     include "../assets/pages/_page-head.php"; 
     header_path('../'); 
     ?>
+    <link rel="stylesheet" href="../assets/css/main.css">
 
     <title>Single Symptoms Disease | Medi-Mind</title>
-
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
     <style>
     .footer-container {
         display: flex;
@@ -55,16 +52,11 @@ if (isset($_GET['id'])) {
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#disease">Disease</a></li>
-                    <li><a href="#contact"></a></li>
-                    <li><a href="./contributor.php"></a></li>
+                    <li><a href="../" class="">Home</a></li>
+                    <li><a class="active">Disease</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-
-            <a class="btn-getstarted" href="#disease">Get Started</a>
-
         </div>
     </header>
 
@@ -303,34 +295,20 @@ if (isset($_GET['id'])) {
 
         </section><!-- /Features Section -->
 
-        <!-- Features Cards Section -->
-        <section class="features section">
-            <?php 
-                include "feedback.php";
-            ?>
-        </section>
-
-
-
-        
-
-        <!-- /Contact Section -->
-
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendors/php-email-form/validate.js"></script>
-    <script src="vendors/aos/aos.js"></script>
-    <script src="vendors/glightbox/js/glightbox.min.js"></script>
-    <script src="vendors/swiper/swiper-bundle.min.js"></script>
-    <script src="vendors/purecounter/purecounter_vanilla.js"></script>
+    <script src="../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendors/aos/aos.js"></script>
+    <script src="../vendors/glightbox/js/glightbox.min.js"></script>
+    <script src="../vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="../vendors/purecounter/purecounter_vanilla.js"></script>
 
     <!--Main JS File-->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 
     <script defer=""
         src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
@@ -362,74 +340,5 @@ if (isset($_GET['id'])) {
         }, 4000);
     }
     </script>
-
-    <script>
-    let clickCount = 0;
-    let clickTimer;
-
-    document.getElementById("heroImage").addEventListener("click", function() {
-        clickCount++;
-
-        // Start/reset timer
-        if (!clickTimer) {
-            clickTimer = setTimeout(() => {
-                clickCount = 0;
-                clearTimeout(clickTimer);
-                clickTimer = null;
-            }, 3000); // 3 seconds
-        }
-
-        if (clickCount === 4) {
-            // Reset and redirect
-            clearTimeout(clickTimer);
-            window.location.href = "login.php"; // change to your login page
-        }
-    });
-    </script>
-    <script src="assets/js/feedback.js"></script>
-</body>
-
+</body> 
 </html>
-
-
-
-<?php
-include "connection.php";
-
-try {
-    $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    // Check if form is submitted
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Sanitize and collect form data
-        $name = htmlspecialchars(trim($_POST['name']));
-        $email = htmlspecialchars(trim($_POST['email']));
-        $subject = htmlspecialchars(trim($_POST['subject']));
-        $message = htmlspecialchars(trim($_POST['message']));
-
-        // Insert data into database
-        $sql = "INSERT INTO contact_form (name, email, subject, message) 
-                VALUES (:name, :email, :subject, :message)";
-        $stmt = $conn->prepare($sql);
-
-        $stmt->execute([
-            ':name' => $name,
-            ':email' => $email,
-            ':subject' => $subject,
-            ':message' => $message
-        ]);
-
-           echo "
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            showLiveAlert('Your message has been sent. Thank you!', 'success');
-        });
-    </script>
-    ";
-    }
-
-} catch (PDOException $e) {
-    echo "Error: " . $e->getMessage();
-}
-?>
