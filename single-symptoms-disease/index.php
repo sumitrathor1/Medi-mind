@@ -18,6 +18,7 @@ if (isset($_GET['id'])) {
 }
 ?>
 <html lang="en">
+
 <head>
     <?php 
     include "../assets/pages/_page-head.php"; 
@@ -287,57 +288,108 @@ if (isset($_GET['id'])) {
                         </div>
                     </div>
                 </div>
-
-
             </section>
             <!-- /Features Cards Section -->
 
         </section><!-- /Features Section -->
 
+        <footer id="footer" class="footer">
 
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
-            class="bi bi-arrow-up-short"></i></a>
+            <div class="container footer-top">
+                <div class="row gy-4 footer-containerx d-flex justify-content-evenly">
 
-    <!-- Vendor JS Files -->
-    <script src="../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../vendors/aos/aos.js"></script>
-    <script src="../vendors/glightbox/js/glightbox.min.js"></script>
-    <script src="../vendors/swiper/swiper-bundle.min.js"></script>
-    <script src="../vendors/purecounter/purecounter_vanilla.js"></script>
+                    <!-- About Section -->
+                    <div class="col-lg-4 col-md-6 footer-about">
+                        <a href="./" class="logo d-flex align-items-center">
+                            <span class="sitename">Medi-Mind</span>
+                        </a>
+                        <div class="footer-contact pt-3">
+                            <p>Gwalior, Madhya Pradesh</p>
+                            <p>India - 474003</p>
+                        </div>
+                        <div class="social-links d-flex mt-4">
+                            <a href="./"><i class="bi bi-twitter-x"></i></a>
+                            <a href="./"><i class="bi bi-facebook"></i></a>
+                            <a href="./"><i class="bi bi-instagram"></i></a>
+                            <a href="./"><i class="bi bi-linkedin"></i></a>
+                            <a href="./"><i class="bi bi-youtube"></i></a>
+                            <a href="./"><i class="bi bi-telegram"></i></a>
+                        </div>
+                    </div>
 
-    <!--Main JS File-->
-    <script src="../assets/js/main.js"></script>
+                    <!-- Useful Links -->
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../">Home</a></li>
+                            <li><a href="./">Diseases</a></li>
+                        </ul>
+                    </div>
 
-    <script defer=""
-        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
-        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-        data-cf-beacon="{&quot;rayId&quot;:&quot;93e09cc54ae74826&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.4.0-1-g37f21b1&quot;,&quot;token&quot;:&quot;68c5ca450bae485a842ff76066d69420&quot;}"
-        crossorigin="anonymous"></script>
+                    <!-- Our Services -->
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="./">Chat Support</a></li>
+                        </ul>
+                    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
-    </script>
+                </div>
+            </div>
 
-    <script>
-    function showLiveAlert(message, type = "success") {
-        const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+            <!-- Footer Bottom -->
+            <div class="container copyright text-center mt-4">
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">Medi Mind</strong> <span>All Rights
+                        Reserved</span></p>
+            </div>
 
-        const wrapper = document.createElement("div");
-        wrapper.innerHTML = `
+        </footer>
+
+
+        <!-- Scroll Top -->
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
+                class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../vendors/aos/aos.js"></script>
+        <script src="../vendors/glightbox/js/glightbox.min.js"></script>
+        <script src="../vendors/swiper/swiper-bundle.min.js"></script>
+        <script src="../vendors/purecounter/purecounter_vanilla.js"></script>
+
+        <!--Main JS File-->
+        <script src="../assets/js/main.js"></script>
+
+        <script defer=""
+            src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+            integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+            data-cf-beacon="{&quot;rayId&quot;:&quot;93e09cc54ae74826&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.4.0-1-g37f21b1&quot;,&quot;token&quot;:&quot;68c5ca450bae485a842ff76066d69420&quot;}"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+        </script>
+
+        <script>
+        function showLiveAlert(message, type = "success") {
+            const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+
+            const wrapper = document.createElement("div");
+            wrapper.innerHTML = `
             <div class="alert alert-${type} alert-dismissible fade show" role="alert">
                 ${message}
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         `;
 
-        alertPlaceholder.append(wrapper);
+            alertPlaceholder.append(wrapper);
 
-        setTimeout(() => {
-            const alert = bootstrap.Alert.getOrCreateInstance(wrapper.querySelector('.alert'));
-            alert.close();
-        }, 4000);
-    }
-    </script>
-</body> 
+            setTimeout(() => {
+                const alert = bootstrap.Alert.getOrCreateInstance(wrapper.querySelector('.alert'));
+                alert.close();
+            }, 4000);
+        }
+        </script>
+</body>
+
 </html>
