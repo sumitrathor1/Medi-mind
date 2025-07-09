@@ -35,7 +35,8 @@ Below is a summarized explanation of the flow chart represented in the system:
 ## 🖼️ Visual Workflow
 
 > You can find the system architecture diagram
-![image](https://github.com/user-attachments/assets/6744aeec-4c6e-4ac1-824b-50df9856998d)
+![image](https://github.com/user-attachments/assets/614768eb-e13f-4af9-adb0-8e75c8e877e8)
+
 
 ---
 
