@@ -1,4 +1,4 @@
-# 🧠 AI-Powered Medical Diagnosis & Assistance System
+![image](https://github.com/user-attachments/assets/1860e3a8-b937-4c2c-8edb-03fd0bdd7a62)# 🧠 AI-Powered Medical Diagnosis & Assistance System
 
 This project provides an end-to-end AI-based  communicational healthcare assistant to predict diseases, suggest medicines (including Ayurveda and home remedies), and even facilitate emergency transport and video consultation. The aim is to offer an affordable, accessible, and semi-automated diagnostic tool, especially useful in rural and underserved areas.
 
@@ -34,7 +34,8 @@ Below is a summarized explanation of the flow chart represented in the system:
 
 ## 🖼️ Visual Workflow
 
-> You can find the system architecture diagram [here](./Untitled%20(11).png)
+> You can find the system architecture diagram
+![image](https://github.com/user-attachments/assets/6744aeec-4c6e-4ac1-824b-50df9856998d)
 
 ---
 
