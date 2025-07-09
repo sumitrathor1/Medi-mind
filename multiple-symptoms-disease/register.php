@@ -14,7 +14,7 @@ ob_start(); ?>
 <body class="index-page scrolled" data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0">
     <main class="main">
         <!-- register Section -->
-        <section id="register" class="contact section light-background mt-5">
+        <section id="register" class="contact section light-background">
 
             <!-- Section Title -->
             <div class="container section-title aos-init" data-aos="fade-up">
@@ -123,6 +123,9 @@ ob_start(); ?>
                                     </div>
                                     <div class="col-12 text-center">
                                         <button id="registerBtn" type="submit" class="btn">Register</button>
+                                    </div>
+                                     <div class="col-12 text-center">
+                                        <small>Already have an account? <a href="login.php">Login here</a></small>
                                     </div>
                                 </div>
                             </form>
