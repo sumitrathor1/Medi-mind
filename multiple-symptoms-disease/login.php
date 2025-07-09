@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body class="index-page scrolled">
     <main class="main">
-        <section id="login" class="contact section light-background mt-5">
+        <section id="login" class="contact section light-background">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Login</h2>
                 <p>Access your Medimind account securely</p>

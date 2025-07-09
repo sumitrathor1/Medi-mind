@@ -18,9 +18,6 @@
         </i>
     </a>
     <?php include "assets/pages/_page-script.php"; ?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ujmXBmVwvHidXMa2sUuP6929nDCwa9rjDZ9wla9ieP9XCH8cS5n0r9+3812J948" crossorigin="anonymous">
-    </script>
 
     <!-- Bootstrap CSS (in <head>) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
