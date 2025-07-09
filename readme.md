@@ -1,6 +1,6 @@
 # 🧠 AI-Powered Medical Diagnosis & Assistance System
 
-This project provides an end-to-end AI-based  communicational healthcare assistant to predict diseases, suggest medicines (including Ayurveda and home remedies), and even facilitate emergency transport and video consultation. The aim is to offer an affordable, accessible, and semi-automated diagnostic tool, especially useful in rural and underserved areas.
+This project provides an end-to-end AI-based communicational healthcare assistant to predict diseases, suggest medicines (including Ayurveda and home remedies), and even facilitate emergency transport and video consultation. The aim is to offer an affordable, accessible, and semi-automated diagnostic tool, especially useful in rural and underserved areas.
 
 ---
 
@@ -34,9 +34,23 @@ Below is a summarized explanation of the flow chart represented in the system:
 
 ## 🖼️ Visual Workflow
 
-> You can find the system architecture diagram
+> You can find the system architecture diagram  
 ![image](https://github.com/user-attachments/assets/614768eb-e13f-4af9-adb0-8e75c8e877e8)
 
+---
+
+## 🌐 Live Demo
+
+The project is live at:  
+👉 **[https://sumitrathor.rf.gd/medi-mind/](https://sumitrathor.rf.gd/medi-mind/)**
+
+### 🧪 Test Credentials
+
+| Role      | Email                          | Password    |
+|-----------|--------------------------------|-------------|
+| Student   | sumitrathor142272@gmail.com    | Sumit@123   |
+| Doctor    | rathorsumit486@gmail.com       | Sumit@123   |
+| Patient   | hackwhalla@gmail.com           | Sumit@123   |
 
 ---
 
@@ -56,31 +70,31 @@ Special thanks to all contributors and open-source libraries used.
 
 This system can evolve into a **scalable health-tech startup** serving the following sectors:
 
-1. Rural & Remote Areas: Where doctor availability is limited, AI and final-year med students bridge the gap.
+1. **Rural & Remote Areas**: Where doctor availability is limited, AI and final-year med students bridge the gap.  
+2. **Low-cost Healthcare Services**  
+3. **Subscription-based Health Services**  
+4. **Subscription for Doctors**: Premium profiles + patient reviews  
+5. **Subscription for Patients**  
+6. **Income from Affiliated Pharmacy Stores**
 
-2. Low-cost Healthcare services
-
-3.  Subscription-based Health Service
-4. Subscription for doctor promotion based on  (premium profile) + (patient review)
-5. Subscription for patient 
-6. income from affiliated pharmacy stores                                                                                                 
 ---
 
 ## 💡 Benefits
 
-✅ Early detection of diseases using AI.  
-✅ Reduces the burden on healthcare professionals.  
-✅ Offers affordable and scalable medical support.  
-✅ Promotes Ayurveda and home-based remedies.  
-✅ Emergency support via transport is unavailable.  
-✅ Increases healthcare accessibility in underserved areas.  
-✅ Easy integration with pharmacy apps for medicine delivery.  
-✅ Step-by-step verification ensures high diagnostic accuracy.
+✅ Early detection of diseases using AI  
+✅ Reduces the burden on healthcare professionals  
+✅ Offers affordable and scalable medical support  
+✅ Promotes Ayurveda and home-based remedies  
+✅ Emergency support via transport integration  
+✅ Increases healthcare accessibility in underserved areas  
+✅ Easy integration with pharmacy apps for medicine delivery  
+✅ Step-by-step verification ensures high diagnostic accuracy
 
 ---
 
 ## 📄 License
 
-This project is currently under academic/prototype development. Licensing will be decided upon commercialization.
+This project is currently under academic/prototype development.  
+Licensing will be decided upon commercialization.
 
 ---
