@@ -1,8 +1,8 @@
 <?php
-if(!isset($_SESSION['user_id']) || !isset($_SESSION['user_email'])) {
-    echo json_encode(['reply' => 'You are not logged in.']);
-    exit;
-}
+// if(!isset($_SESSION['user_id']) || !isset($_SESSION['user_email'])) {
+//     echo json_encode(['reply' => 'You are not logged in.']);
+//     exit;
+// }
 if(!isset($_POST['message'])) {
     echo json_encode(['reply' => 'Please enter a message.']);
     exit;
