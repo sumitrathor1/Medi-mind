@@ -4,22 +4,11 @@
       session_start();
   }
 
-  // -----------------------------------------------------------------------
-  // 1.  GET USER DATA FROM SESSION (set during login)
-  // -----------------------------------------------------------------------
-  //     $_SESSION['user_id']       = $user['id'];
-  //     $_SESSION['user_name']     = $user['name'];
-  //     $_SESSION['user_email']    = $user['email'];
-  //     $_SESSION['account_type']  = $user['account_type'];
-  //     $_SESSION['user_avatar']   = $user['avatar'] (optional)
-  //     $_SESSION['notif_count']   = total unread notifications (optional)
-  // -----------------------------------------------------------------------
-
   $isLoggedIn   = isset($_SESSION['user_id']);
   $userName     = $isLoggedIn ? ($_SESSION['user_name']     ?? 'Henry')                 : null;
   $userEmail    = $isLoggedIn ? ($_SESSION['user_email']    ?? null)                    : null;
   $accountType  = $isLoggedIn ? ($_SESSION['account_type']  ?? null)                    : null;
-  $userAvatar   = $isLoggedIn ? ($_SESSION['user_avatar']   ?? 'assets/img/profile.jpg'): null;
+  $userAvatar   = $isLoggedIn ? ($_SESSION['user_avatar']   ?? 'assets/img/useProfile/default.png'): null;
   $notifications= $isLoggedIn ? (int)($_SESSION['notif_count'] ?? 0)                    : 0;
 ?>
 <style>
@@ -105,15 +94,3 @@
 
   </div><!-- End .header-container -->
 </header>
-
-<!-- ===================================================================
-     Bootstrap JS & dropdown initialisation (required for profile menu)
-     =================================================================== -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-ujmXBmVwvHidXMa2sUuP6929nDCwa9rjDZ9wla9ieP9XCH8cS5n0r9+3812J948" crossorigin="anonymous"></script>
-
-<!-- Bootstrap CSS (in <head>) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-<!-- Bootstrap JS Bundle (before </body>) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
