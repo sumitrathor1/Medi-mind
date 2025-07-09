@@ -1,9 +1,9 @@
 <?php 
 if($accountType == "patient"){
-    include "assets/pages/patient.php";
+    include "assets/pages/_patient.php";
 }else if($accountType == "doctor"){
     include "assets/pages/doctor.php";
-}else if($accountType == "admin"){
-    include "assets/pages/admin.php";
+}else if($accountType == "student"){
+    include "assets/pages/_student.php";
 }
 ?>
